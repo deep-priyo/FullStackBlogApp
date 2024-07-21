@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Clean Blog - Start Bootstrap Theme</title>
+    <link rel="icon" type="image/x-icon" href="static/assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="static/css/styles.css" rel="stylesheet" />
+    <style>
+        /* New Styles for Navigation */
+        #mainNav {
+            background-color: -moz-mac-accentdarkestshadow; /* Dark background color */
+            transition: background-color 0.3s ease-in-out; /* Smooth background transition */
+        }
+        #mainNav .navbar-brand {
+            color: #ffffff; /* White text color */
+            font-size: 1.5rem; /* Larger font size */
+            transition: color 0.3s ease-in-out; /* Smooth color transition */
+        }
+        #mainNav .navbar-nav .nav-link {
+            color: #ffffff; /* White text color */
+            margin-right: 15px; /* Space between links */
+            transition: color 0.3s ease-in-out; /* Smooth color transition */
+        }
+        #mainNav .navbar-nav .nav-link:hover {
+            color: #f8d7da; /* Light red on hover */
+        }
+        #mainNav .navbar-toggler {
+            border: none; /* Remove border */
+            color: #ffffff; /* White icon color */
+        }
+        /* Animations */
+        .navbar-nav .nav-item {
+            animation: fadeInUp 1s ease-in-out;
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Responsive styles */
+        @media (max-width: 991.98px) {
+            .navbar-nav .nav-item {
+                animation: none; /* Disable animation on mobile */
+            }
+            .navbar-nav .nav-link {
+                padding: 10px 15px; /* Adjust padding for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="https://github.com/deep-priyo">Deep-Priyo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{url_for('home')}}">Home</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{url_for('about')}}">About</a></li>
+                    <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="{{url_for('contact')}}">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Bootstrap core JS-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
